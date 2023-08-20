@@ -39,16 +39,11 @@ scalers = streamlit_load_scalers()
 
 
 #Load the saved model from the pickle file
-image_model1 = load_model('Virage_Odyssey_model.h5')
-image_model2 = load_model('s4_ram_model.h5')
-image_model3 = load_model('range_c30_model.h5')
-image_models = [image_model1,image_model2,image_model3] 
+
+image_models = [] 
 
 
-label_mappings1 = np.load('Virage_Odyssey_model_label_mappings.npy', allow_pickle=True).tolist()
-label_mappings2 = np.load('s4_ram_model_label_mappings.npy', allow_pickle=True).tolist()
-label_mappings3 = np.load('range_c30_model_label_mappings.npy', allow_pickle=True).tolist()
-label_mappin = [label_mappings1, label_mappings2, label_mappings3]
+label_mappin = []
     
 #Load the saved models from the pickle files
 def load_models():
