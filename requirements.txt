@@ -1,5 +1,5 @@
-streamlit==0.90.0
-tensorflow==2.5.0
+streamlit==1.24.0
+tensorflow==2.13.0
 pandas
 Pillow
 numpy
@@ -7,3 +7,4 @@ tensorflow
 scikit-learn
 joblib
 scipy
+xgboost
